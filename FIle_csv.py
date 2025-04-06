@@ -1,18 +1,13 @@
 import os
 import csv
 
-# Update this path to point to your "training" folder
-root_dir = r'/home/endodl/PHASE-1/mln/lesions_cv24/MAIN/Train+Val'  # Update this!
-
+root_dir = r'/home/endodl/PHASE-1/mln/lesions_cv24/MAIN/Train+Val' 
 output_csv = 'lesion_dataset.csv'
-
-# The exact class names as they appear in folder names
 lesion_classes = [
     'angioectasia', 'bleeding', 'erosion', 'erythema', 'foreign Body',
     'lymphangiectasia', 'normal', 'polyp', 'ulcer', 'worms'
 ]
 
-# Initialize
 rows = []
 header = ['image_path', 'Dataset'] + lesion_classes
 
@@ -44,10 +39,9 @@ for lesion in lesion_classes:
             else:
                 print(f"Skipping non-image file: {img}")
 
-# Write CSV
 with open(output_csv, 'w', newline='') as f:
     writer = csv.writer(f, delimiter='\t')
     writer.writerow(header)
     writer.writerows(rows)
 
-print(f"✅ CSV saved as {output_csv} with {len(rows)} image entries.")
+print(f"CSV saved as {output_csv} with {len(rows)} image entries.")
