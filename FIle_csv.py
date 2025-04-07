@@ -2,10 +2,10 @@ import os
 import csv
 
 root_dir = r'/home/endodl/PHASE-1/mln/lesions_cv24/MAIN/Train+Val' 
-output_csv = 'lesion_dataset.csv'
+output_csv = '/home/endodl/PHASE-1/mln/lesions_cv24/MAIN/Train+Val/lesion_dataset.csv'
 lesion_classes = [
-    'angioectasia', 'bleeding', 'erosion', 'erythema', 'foreign Body',
-    'lymphangiectasia', 'normal', 'polyp', 'ulcer', 'worms'
+    'angioectasia', 'bleeding', 'erosion', 'erythema', 'foreign_body',
+    'lymphangiectasia', 'normal', 'polyp', 'ulcers', 'worms'
 ]
 
 rows = []
