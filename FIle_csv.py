@@ -1,11 +1,11 @@
 import os
 import csv
 
-root_dir = r'/home/endodl/PHASE-1/mln/lesions_cv24/MAIN/Train+Val' 
-output_csv = '/home/endodl/PHASE-1/mln/lesions_cv24/MAIN/Train+Val/lesion_dataset.csv'
+root_dir = r'/home/endodl/PHASE-1/mln/lesions_cv24/MAIN/data/capsulevision/validation' 
+output_csv = '/home/endodl/PHASE-1/mln/lesions_cv24/MAIN/data/capsulevision/validation/validation_data.xlsx'
 lesion_classes = [
-    'angioectasia', 'bleeding', 'erosion', 'erythema', 'foreign_body',
-    'lymphangiectasia', 'normal', 'polyp', 'ulcers', 'worms'
+    'Angioectasia', 'Bleeding', 'Erosion', 'Erythema', 'Foreign_body',
+    'Lymphangiectasia', 'Normal', 'Polyp', 'Ulcers', 'Worms'
 ]
 
 rows = []
